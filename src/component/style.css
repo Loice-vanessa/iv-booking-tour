@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.body{
+   font-family: 'Roboto',sans-serif;
+}
+html{
+    font-size: 62.5%;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.8rem 2.2rem;
+    background:black;
+    align-items: center;
+}
+.logo-img {
+    width: 100px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%; 
+}
+.Nav-links{
+    display: flex;
+    font-size: 1.8rem;
+    list-style-type: none;
+    gap: 3rem;
+}
+.Nav-link:link,
+.Nav-link:visited{
+    color: white;
+    font-size: 2rem;
+    text-decoration: none;
+}
+.Nav-link:hover,
+.Nav-link:active{
+    color: darkgoldenrod;
+}
+.link-green:link,
+.link-green:visited{
+    color: darkgoldenrod;
+}
+.link-green:hover,
+.link-green:active{
+    color: white;
+}
+.btn-link:link,
+.btn-link:visited{
+    background:darkgoldenrod;
+    padding:1.2rem;
+    box-shadow: 10px 10px 10px black;
+    border-radius: 0.2rem;
+}
+.btn-link:link,
+.btn-link:active{
+    color: white;
+    background-color:darkgoldenrod;
+}
