@@ -1,8 +1,25 @@
 import React from "react";
 import logo from "../Assets/images/logo2.png";
 import "./style.css";
+import { Button, Modal,Input,Form } from 'antd';
+import { useState } from 'react';
 
 const Nav = () => {
+        const [visible, setVisible] = useState(false);
+      
+        const showModal = () => {
+          setVisible(true);
+        };
+      
+        const handleOk = (e) => {
+          console.log(e);
+          setVisible(false);
+        };
+      
+        const handleCancel = (e) => {
+          console.log(e);
+          setVisible(false);
+        };
     return (
        <div className="nav">
            <img src={logo} alt="RWANDA BOOKING TOUR" className="logo-img"/>
@@ -19,7 +36,7 @@ const Nav = () => {
                        </a>
                    </li>
                    <li>
-                       <a href="" className="Nav-link">
+                       <a href="/contactUs" className="Nav-link">
                            Contact-us
                        </a>
                    </li>
@@ -29,16 +46,61 @@ const Nav = () => {
                        </a>
                    </li>
                    
-                   <li>
-                       <a href="signUp" className="Nav-link link-green">
-                           Sign-in
-                       </a>
-                   </li>
+               
                    <li>
                        <a href="/tours" className="Nav-link btn-link">
                            tours
                        </a>
                    </li>
+                   <Button type="primary" style={{background:"darkgoldenrod"}} onClick={showModal}>
+        Sign-up
+      </Button>
+      <Modal
+        title="Basic Modal"
+        visible={visible}
+        onOk={handleOk}
+        onCancel={handleCancel}
+        okButtonProps={{
+          disabled: true,
+        }}
+        cancelButtonProps={{
+          disabled: true,
+        }}
+      >
+        <textBox>firstName</textBox>
+        <Form.Item
+        name="username"
+        rules={[
+          {
+            required: true,
+            message: 'Please input your Username!',
+          },
+        ]}
+      >
+        <Input  placeholder="Username" />
+      </Form.Item>
+      <Form.Item
+        name="password"
+        rules={[
+          {
+            required: true,
+            message: 'Please input your Password!',
+          },
+        ]}
+          >
+        <Input
+         
+          type="password"
+          placeholder="Password"
+        />
+      </Form.Item>
+        <Button type="primary" htmlType="submit" className="login-form-button" style={{color:"white",fontSize:"15px"}}>
+         Log in
+        </Button>
+        <Form.Item>
+        Or <a href="/register" style={{color:"green",fontSize:"15px"}}>register now!</a>
+      </Form.Item>
+      </Modal>
                </ul>
            </div>
        </div>

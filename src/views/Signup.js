@@ -1,28 +1,80 @@
-import React from "react";
-// import HomeLayout from "../component/Homelayout";
-import cyiza from "../Assets/images/lake.jpeg";
-const About = () => {
+import React from 'react';
+import 'antd/dist/antd.css';
+// import './index.css';
+import { Button, Modal,Input,Form } from 'antd';
+import { useState } from 'react';
+import Register from "../component/register.js";
+
+const App = () => {
+  const [visible, setVisible] = useState(false);
+
+  const showModal = () => {
+    setVisible(true);
+  };
+
+  const handleOk = (e) => {
+    console.log(e);
+    setVisible(false);
+  };
+
+  const handleCancel = (e) => {
+    console.log(e);
+    setVisible(false);
+  };
+
   return (
-    <div className="didi" >
-      <h1 style={{ color: "black", textAlign: "center", fontWeight: "bold" }}>
-        About us
-      </h1>
-      <p style={{ fontWeight: "bolder",textAlign:"center"}}>
-        The Tour du Rwanda is a cycling event created in 1988 and based in
-        Rwanda. The event is a cycling stage race that is organized by the
-        Rwanda Cycling Federation. The event has been part of the UCI Africa
-        Tour as a category 2.1-rated event since 2009. Tour du Rwanda 2022:
-        Mugisha Wins 8th Stage as Eritrean Tesfazion Romps to Victory. Eritrean
-        Natnael Tesfazion won the 14th Edition of Tour du Rwanda. Mugisha, who
-        races for South Africa's ProTouch, won the eighth stage of the tour,
-        which was flagged of by President Kagame, at Canal Olympia in Rebero,
-        Kicukiro district
-      </p>
-      <div className="ira">
-      <img  src={cyiza} alt=""></img>
-      <img  src={cyiza} alt=""></img>
-      </div>
-    </div>
+    <>
+      <Button type="primary" onClick={showModal}>
+        Open Modal with customized button props
+      </Button>
+      <Modal
+        title="Basic Modal"
+        visible={visible}
+        onOk={handleOk}
+        onCancel={handleCancel}
+        okButtonProps={{
+          disabled: true,
+        }}
+        cancelButtonProps={{
+          disabled: true,
+        }}
+      >
+        <textBox>firstName</textBox>
+        <Form.Item
+        name="username"
+        rules={[
+          {
+            required: true,
+            message: 'Please input your Username!',
+          },
+        ]}
+      >
+        <Input  placeholder="Username" />
+      </Form.Item>
+      <Form.Item
+        name="password"
+        rules={[
+          {
+            required: true,
+            message: 'Please input your Password!',
+          },
+        ]}
+          >
+        <Input
+         
+          type="password"
+          placeholder="Password"
+        />
+      </Form.Item>
+        <Button type="primary" htmlType="submit" className="login-form-button" style={{color:"white",fontSize:"15px"}}>
+         Log in
+        </Button>
+        <Form.Item>
+        Or <a href="/register" style={{color:"green",fontSize:"15px"}}>register now!</a>
+      </Form.Item>
+      </Modal>
+    </>
   );
 };
-export default About;
+
+export default App;

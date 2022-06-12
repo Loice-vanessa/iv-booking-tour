@@ -3,8 +3,8 @@ import React,{ useState} from "react";
 import { Card, Image, Space, Typography, button, Drawer } from "antd";
 import allTours from "../Assets/data/tours.json"
 import SingleTour from "../component/SingleTour";
-import gorilla from "../Assets/images/gorilla.jpeg"; 
-import lake from "../Assets/images/lake.jpeg";
+// import gorilla from "../Assets/images/gorilla.jpeg"; 
+// import lake from "../Assets/images/lake.jpeg";
 
 const { Text, Title } = Typography;
 const Tours = () => {
@@ -13,13 +13,13 @@ const Tours = () => {
   return (
     <>
     <div style={{ widith: "100%", height: "auto", padding: "10px 100px" }}>
-      <Card style={{justifyContent:"space-between"}}>
+      <Card style={{justifyContent:"space-between",background:"darkgolden"}}>
         {/* <Title>choose your tour</Title> */}
         {
         allTours.map((tour)=>(
             <Card.Grid className="tour-card-grid">
           <Space direction="vertical">
-            <Image previeW={true} scr={tour.photo} />
+            <img  src={tour.photo} />
             <Title level={4} style={{ color: "darkgoldenrod" }}>
               {tour.title.toUpperCase()}
             </Title>
@@ -44,8 +44,6 @@ const Tours = () => {
     onClose={()=>{setShowDrawer(false)}}  
     visible={ShowDrawer}>
     <SingleTour data={selectedTour}></SingleTour>
-    
-
     </Drawer>
     </>
   );

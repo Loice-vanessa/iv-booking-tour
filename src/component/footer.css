@@ -25,7 +25,7 @@ p span{
     display: flex;
     gap: 2rem;
     padding: 2rem 0;
-    color: #ddd;
+    color: darkgoldenrod;
     font-size: 2rem;
 }
 .copyright, .contctus-column{

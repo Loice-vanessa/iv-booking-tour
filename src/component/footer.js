@@ -23,7 +23,7 @@ const Footer=()=>{
             <h3 className="footer-title">Contact-US</h3>
             <p>623 Kacyiru st,,2nd floor, <span>kigali Rwanda</span></p>
             <p><a href="tel:+250-788-716-971" />tel:+250-788-716-971</p>
-            <p><a href="mail to:webmaster@example.com" />ocyezavanessa@gmail.com</p>
+            <p><a href="mail to:webmaster@example.com" />icyezavanessa@gmail.com</p>
         </div>
         <div className="acount-column">
         <h3 className="footer-title">Account</h3>
