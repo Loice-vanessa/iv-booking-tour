@@ -19,7 +19,7 @@ const App = ({children}) => {
     <Layout>
       <Sider trigger={null} collapsible collapsed={collapsed}>
         <div className="logo" />
-        <Menu
+        {/* <Menu
           theme="dark"
           mode="inline"
           defaultSelectedKeys={['1']}
@@ -41,7 +41,15 @@ const App = ({children}) => {
             },
           ]}
         />
-         <Link to="/admin">allTours</Link>
+ */}
+
+
+
+
+         <Link to="/Admin">allTours</Link>
+         <br  />
+        
+         <Link to="/Admindashboard">createTour</Link>
       </Sider>
       <Layout className="site-layout">
         <Header

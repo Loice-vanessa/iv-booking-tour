@@ -1,0 +1,11 @@
+.contact{
+    background-image: url("../Assets/images/dark.jpg");
+}
+.vanessa{
+    background: darkgoldenrod;
+    color: white;
+    font-weight: 80px;
+    height: 100%;
+    font-size: 20px;
+    margin-left: 40rem;
+}

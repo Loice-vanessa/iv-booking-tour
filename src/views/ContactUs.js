@@ -5,14 +5,14 @@ import { Button, Checkbox, Form, Input, Space } from 'antd';
 import { LockOutlined, UserOutlined } from '@ant-design/icons';
 import { DownloadOutlined } from "@ant-design/icons";
 import Card from "antd";
-import "./Home.css";
+import "./contact.css";
 import TextArea from "antd/lib/input/TextArea";
 const Contact = () => {
     const onFinish = (values) => {
       console.log('Received values of form: ', values);
     };
     return(
-        <div  style={{width:"100%",height:"auto",padding:"10rem 50rem 30rem 10rem",backgroundImage:" ../Assets/images/back.jifif"}}>
+        <div  style={{width:"100%",height:"auto",padding:"10rem 50rem 30rem 10rem"}} className="contact">
         <Form
       name="normal_login"
       className="login-form"
@@ -65,7 +65,7 @@ const Contact = () => {
           ]}
           >
          <TextArea placeholder="your message" style={{padding:"5rem"}}>your message</TextArea> 
-         <Button type="primary" shape="round" style={{marginLeft:"20rem",marginTop:"30px",fontSize:"10px",height:"100%",fontWeight:"80px"}}>Submit
+         <Button className="vanessa" type="primary" shape="round">Submit
                             </Button>
       </Form.Item>
     </Form>
