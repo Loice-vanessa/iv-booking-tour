@@ -1,0 +1,63 @@
+[
+    {
+        "Name":"MICO Darius",
+        "Email":"micodariuse@gmai.com",
+        "Gender":"Male",
+        "Home":"Kimironko",
+        "about":"I am a highly competent mobile application software developer with eight years' experience developing a wide range of tools for both iOS and Android for a range",
+        "isActive":true,
+        "Phone":"+250788716971",
+        "Profile":"https://i.pinimg.com/564x/64/c6/6a/64c66aa5797a16cee64002da6cd220e6.jpg"
+        
+    },
+    {
+        "Name":" SHEMA Viery",
+        "Email":"shemaviery@gmai.com",
+        "Gender":"Male",
+        "Home":"Kimironko",
+        "isActive":true,
+        "Phone":"+250788716971",
+        "Profile":"https://i.pinimg.com/564x/e6/19/40/e61940d1a5702900c1d38eb8824b3f36.jpg"
+        
+    },
+    {
+        "Name":"GWIZA Kenneth",
+        "Email":"Gwizakenneth@gmai.com",
+        "Gender":"Male",
+        "Home":"kanombe",
+        "isActive":false,
+        "Phone":"+250788716971",
+        "Profile":"https://1.bp.blogspot.com/-f-r-YLD02G0/YPfBDEs2etI/AAAAAAAAFhI/AH65m2YdHzgd9vEezyg-Mugfn6wWYLKuQCLcBGAsYHQ/s619/images%2B%25284%2529.jpeg"
+        
+    },
+    {
+        "Name":"ICYEZA Vanessa",
+        "Email":"icyezavanessa@gmai.com",
+        "Gender":"female",
+        "Home":"kanombe",
+        "isActive":true,
+        "Phone":"+250788716971",
+        "Profile":"https://i.pinimg.com/564x/fb/e8/f9/fbe8f92308efe8a97995fd42f535ac9f.jpg"
+        
+    },
+    {
+        "Name":"UMWALI Abby gaelee",
+        "Email":"cyizalouis@gmai.com",
+        "Gender":"female",
+        "Home":"kanombe",
+        "isActive":false,
+        "Phone":"+250788716971",
+        "Profile":"https://i.pinimg.com/564x/d9/e4/ef/d9e4efb4db7f87fbd811e295a908ab70.jpg"
+        
+    },
+    {
+        "Name":"ISHIMWE GANZA Jason",
+        "Email":"angei@gmai.com",
+        "Gender":"male",
+        "Home":"kanombe",
+        "isActive":true,
+        "Phone":"+250788716971",
+        "Profile":"https://previews.123rf.com/images/jemastock/jemastock1803/jemastock180307782/98070367-cute-boy-cartoon-vector-illustration-graphic-design.jpg"
+        
+    }
+]

@@ -11,14 +11,8 @@ import "./Home.css"
 function Gallery() {
   return (
     <div className="gallery">
-      <p style={{ color: "white", fontSize: "30px", textAlign: "center" }}>
-        travel tours Gallery
-      </p>
-     <img className="kivu" src={kivu} alt=""></img> 
-      {/* <div class="desc " >KINIGI</div>  */}
-      <img className="kivu" src={vava} alt=""></img> 
-      <img className="kivu" src={icyza} alt=""></img> 
-      <img className="kivu" src={ira} alt=""></img>
+      <h1 className="gallerytitle"> OUR GALLERY</h1>
+      
       <p style={{color:"black",fontSize:"18px",fontWeight:"bold"}}>
         Explore the undiscovered ever-changing views of the scenic African
         savannah plains with exceptional activities of mountain gorilla
@@ -27,6 +21,28 @@ function Gallery() {
         landscape, picturesque villages, breathtaking volcanoes and countless
         boat trips on your safari holiday!
       </p>
+     <img className="kivu" src={kivu} alt=""></img> 
+      {/* <div class="desc " >KINIGI</div>  */}
+      <img className="kivu" src={vava} alt=""></img> 
+      <img className="kivu" src={icyza} alt=""></img> 
+      <img className="kivu" src={ira} alt=""></img>
+      <img className="kivu" src={ira} alt=""></img>
+      <img className="kivu" src={ira} alt=""></img>
+      <img className="kivu" src={ira} alt=""></img>
+      <img className="kivu" src={ira} alt=""></img>
+      <img className="kivu" src={ira} alt=""></img>
+      <img className="kivu" src={ira} alt=""></img>
+      <img className="kivu" src={ira} alt=""></img>
+      <img className="kivu" src={ira} alt=""></img>
+      <img className="kivu" src={ira} alt=""></img>
+      <img className="kivu" src={ira} alt=""></img>
+      <img className="kivu" src={ira} alt=""></img>
+      <img className="kivu" src={ira} alt=""></img>
+      <img className="kivu" src={ira} alt=""></img>
+      <img className="kivu" src={ira} alt=""></img>
+      <img className="kivu" src={ira} alt=""></img>
+      <img className="kivu" src={ira} alt=""></img>
+      
     </div>
   );
 }

@@ -7,7 +7,7 @@ const About = () => {
       <h1 style={{ color: "black", textAlign: "center", fontWeight: "bold" }}>
         About us
       </h1>
-      <p style={{ fontWeight: "bolder",textAlign:"center"}}>
+      <p className="aboutheading">
         The Tour du Rwanda is a cycling event created in 1988 and based in
         Rwanda. The event is a cycling stage race that is organized by the
         Rwanda Cycling Federation. The event has been part of the UCI Africa
@@ -23,6 +23,7 @@ const About = () => {
       <img  src={cyiza} alt=""></img>
       </div>
     </div>
+    
   );
 };
 export default About;

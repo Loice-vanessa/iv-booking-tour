@@ -56,7 +56,7 @@ const Nav = () => {
         Sign-up
       </Button>
       <Modal
-        title="Basic Modal"
+        title="sign in /sign up"
         visible={visible}
         onOk={handleOk}
         onCancel={handleCancel}
@@ -67,7 +67,7 @@ const Nav = () => {
           disabled: true,
         }}
       >
-        <textBox>firstName</textBox>
+        <textBox>Names</textBox>
         <Form.Item
         name="username"
         rules={[
@@ -98,7 +98,7 @@ const Nav = () => {
          Log in
         </Button>
         <Form.Item>
-        Or <a href="/register" style={{color:"green",fontSize:"15px"}}>register now!</a>
+        Or <a href="/register" style={{color:"darkgoldenrod",fontSize:"30px"}}>sign up</a>
       </Form.Item>
       </Modal>
                </ul>

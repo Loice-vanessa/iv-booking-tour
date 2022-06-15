@@ -10,9 +10,22 @@
 .images {
     width: 100%;
 }
-.tour-card-grid{
-    background:rgb(158, 190, 202);
-    max-width: 32%;
-    box-shadow: 20px 3px  black;
-    margin: 0.6%;
+
+/* .main-card{
+    display: grid;
+    grid-template-columns: repeat(4,2fr);
+    gap: 3rem;
 }
+.card{
+    width: 30rem;
+    background-color: rgb(173, 167, 167);
+    box-shadow: 1rem 1.2rem 2.4rem black;
+    border-radius: o.8rem;
+    overflow: hidden;
+    transition: all 0.4s;
+    /* display: flex;
+    flex-direction: column; */
+/* }
+.card:hover{
+    transform: translate(5px, -10px);
+}    */ */

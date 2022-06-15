@@ -8,10 +8,13 @@ import Contactus from "../views/ContactUs";
 import Galley from "../views/Gallery";
 import HomeLayout from '../component/HomeLayout';
 import Register from '../component/register';
-import DashboardLayout from "../component/DashboardLayout";
-import allTours from "../views/dashboard/alltours"
-import App from '../views/dashboard/alltours';
-import NewTour from '../views/dashboard/createTour';
+import DashLayout from "../component/DashLayout";
+// import App from '../views/admin/alltours';
+
+import ManagerUsers from "../views/admin/Managerusers";
+import ManagerTrips from "../views/admin/managetrips";
+import Dashboard from "../views/admin/dashboard";
+
 
 const Index=() =>{
     return (
@@ -28,12 +31,11 @@ const Index=() =>{
             <Route exact path="/Gallery" element={<Galley/>}></Route>  
             <Route path="/tours" element={<Tours/>}/>          
         </Routes>
-         <DashboardLayout>
             <Routes>
-                <Route exact path="/Admin" element={<App/>}/>
-                <Route exact path="/Admindashboard" element={<NewTour/>}/>
+                <Route exact path="/users" element={<ManagerUsers/>}></Route>
+          <Route exact path="/trips" element={<ManagerTrips/>}></Route>
+          <Route exact path="/dashboard" element={<Dashboard/>}></Route>
             </Routes>
-        </DashboardLayout>
         </HomeLayout>
        
         </>
