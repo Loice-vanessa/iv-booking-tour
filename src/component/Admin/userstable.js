@@ -13,6 +13,12 @@ const UsersTable = () => {
  
   const columns = [
     {
+      title: "ID",
+      dataIndex: "ID",
+      key: "ID",
+      render: (text) => <a>{text.split("")}</a>,
+    },
+    {
       title: "Name",
       dataIndex: "Name",
       key: "name",
@@ -22,6 +28,17 @@ const UsersTable = () => {
       title: "Gender",
       dataIndex: "Gender",
       key: "gender",
+      render: (text) => <a>{text}</a>,
+    },
+    {
+      title: "Home",
+      dataIndex: "Home",
+      key: "Home",
+      render: (text) => <a>{text}</a>,
+    },  {
+      title: "Age",
+      dataIndex: "Age",
+      key: "Age",
       render: (text) => <a>{text}</a>,
     },
     {
@@ -35,7 +52,7 @@ const UsersTable = () => {
       dataIndex: "isActive",
       key: "active;",
       render: (text) => (
-        <Tag color={text ? "blue" : "red"}>{text.toString()}</Tag>
+        <Tag color={text ? "green" : "red"}>{text.toString()}</Tag>
       ),
     },
     {
