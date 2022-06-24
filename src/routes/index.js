@@ -14,6 +14,7 @@ import DashLayout from "../component/DashLayout";
 import ManagerUsers from "../views/admin/Managerusers";
 import ManagerTrips from "../views/admin/managetrips";
 import Dashboard from "../views/admin/dashboard";
+import { PieChart } from 'recharts';
 
 
 const Index=() =>{

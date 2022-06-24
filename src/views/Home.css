@@ -64,9 +64,9 @@ html{
     gap: 3rem; */
     background:rgb(227, 231, 233);
     max-width: 32%;
-    box-shadow: 50px 50px  rgb(5, 5, 5);
+    /* box-shadow: 50px 50px  rgb(5, 5, 5); */
     margin: 0.6%;
-    width: 30rem;
+    width: 60rem;
     /* background-color: rgb(173, 167, 167); */
     /* box-shadow: 1rem 1.2rem 2.4rem black; */
     border-radius: o.8rem;
@@ -80,7 +80,21 @@ html{
     /* background-image: linear-gradient(to right, rgb(53, 53, 165), rgb(168, 124, 12)); */
     /* color: transparent; */
     /* font-weight: 900; */
+}
+.galleryheading{
+    font-size: 5rem;
+    text-align: center;
 } 
+.video{
+    /* position: absolute; */
+    /* z-index: -1; */
+    top:0;
+    right: 5;
+    width: 100%;
+    object-fit: cover;
+  
+
+}
 .kivu{
     width: 50%;
     height: 50%;
@@ -128,8 +142,62 @@ html{
     font-weight: 900; */
 }
 
-.aboutheading{
+.abutheadingo{
+    font-size: 1.8rem;
+    color: black;
+    line-height: 1.5rem;
+    letter-spacing: 1px;
+    /* text-align: center;
+    padding-right: 10px; */
+}
+.main-heading{
+    color:  darkgoldenrod;
+    font-size: 26px;
+}
+.underline{
+    height: 04px;
+    width: 4rem;
+    backgroung-color: rgb(227, 231, 233);
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+.ira{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    z-index: 1000;
+}
+/* .secondary{ */
+    /* font-size: 1.8rem;
+    text-transform: uppercase;
+    text-align: center;
+    background-image: linear-gradient(to right, rgb(227, 231, 233), rgb(168, 124, 12));
+    color: transparent;
+    font-weight: 900; */
+/* } */
+
+.aboutheading {
     font-size: 20px;
     text-align: center;
-    padding-right: ;
+    /* padding-right: ; */
 }
+
+/* .widgets .dashboard */
+.dashboard{
+        display: flex;}
+.dashboardcontainer{
+     flex: 6;}
+     .dashboard{
+        display: flex;}
+.dashboardcontainer{
+     flex: 6;}
+.widgets{
+     display: flex;
+     padding: 20px;
+     gap: 20px;
+
+
+    
+}
+
